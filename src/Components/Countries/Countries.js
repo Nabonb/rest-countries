@@ -14,7 +14,7 @@ const Countries = () => {
             <h1>All rest countries : {countries.length}</h1>
             <div className='all-countries'>
             {
-                countries.map(country=><Country country={country}></Country>)
+                countries.map(country=><Country country={country} key={country.cca3}></Country>)
             }
             </div>
             
